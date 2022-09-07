@@ -1,7 +1,11 @@
 package Week2;
 
 import java.util.Arrays;
-
+/**
+ * 
+ * @author Raza Ghulam
+ *
+ */
 public class Challenge {
 
 	public static void main(String[] args) {
@@ -10,6 +14,9 @@ public class Challenge {
 		Arrays.sort(arr); 
 		int gap = arr[arr.length - 1] - arr[0]; 
 		System.out.println(gap);
+		
+		//Second method can also be applied. Find the max and min 
+		// in the array and subtract them. 
 	}
 
 }
