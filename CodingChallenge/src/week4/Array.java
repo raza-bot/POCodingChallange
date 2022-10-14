@@ -2,9 +2,10 @@ package week4;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.OptionalInt;
-import java.util.stream.Collectors;
+import java.util.*;
 
 public class Array {
 
@@ -43,6 +44,7 @@ public class Array {
             j += 2; 
         }
         return ans;
+        
     }
 	
 	//find max row
@@ -54,6 +56,7 @@ public class Array {
 				sum = total; 
 			}
 		}
+		
 		
 		return sum; 
 	        
@@ -80,6 +83,7 @@ public class Array {
 	public static  List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
     
 		List<Boolean> ans = new ArrayList<>(); 
+	
 		
 		int max = Arrays.stream(candies).max().orElse(0);
 		for(int i = 0; i < candies.length; i++) {
@@ -101,7 +105,6 @@ public class Array {
 		Integer[] numsInteger = Arrays.stream(buildArray(nums)).
 				boxed().toArray(Integer[]::new);
 		System.out.println(Arrays.deepToString(numsInteger));
-		
 		
 		//2
 		int[] num1 = {1,2,1}; 
@@ -125,7 +128,12 @@ public class Array {
 		System.out.println(kidsWithCandies(candies, extraCandies));
 		
 		
-		
+		List<String> bookList = new ArrayList<>();
+        bookList.add("Java Programming");
+        bookList.add("Data Strcutures and Alogrithms");
+        bookList.add("Python Programming");
+        Collections.sort(bookList ,String::compareToIgnoreCase);
+        bookList.forEach(System.out::println);
 		
 		
 		

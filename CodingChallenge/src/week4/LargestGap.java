@@ -1,6 +1,11 @@
 package week4;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.Arrays;
+import java.time.ZonedDateTime;
+import java.time.zone.*;
 
 
 public class LargestGap {
@@ -29,7 +34,15 @@ public class LargestGap {
 	public static void main(String[] args) {
 		int nums[] = {9, 4, 26, 26, 0, 0, 5, 20, 6, 25, 5}; 
 		System.out.println(largestGap(nums));
+		
+		LocalTime currentTime = LocalTime.now(); 
+		LocalDate currentDate = LocalDate.now(); 
+		LocalDateTime currentDateTime = LocalDateTime.now();  
+		 
+  
 	
 	}
 
 }
+
+
